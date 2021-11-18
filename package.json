@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/maoforero/backend_ch_desafio3#readme",
   "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
     "nodemon": "^2.0.15"
   }
 }

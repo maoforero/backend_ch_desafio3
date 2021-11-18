@@ -1,10 +1,9 @@
-let http =  require("http");
+let expres = require("express");
+let app = expres();
 const PORT = 3000;
 
-let serverApp = http.createServer((req, res) => {
-    res.end("Holiwiii");
-})
-
-serverApp.listen(PORT, ()=>{
-    console.log(`SAPEEE http://localhost:${PORT}`);
+app.get("/", (req, res, next) => {
+    res.send("Hola Mundo");
+}).listen(PORT, () =>{
+    console.log(`server: http://localhost:${PORT}`)
 })
